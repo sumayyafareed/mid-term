@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Brand Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <style>
+    body {
+      background-image: url('1_20250509_144059_0000.png'); /* image ka naam ya link */
+      background-size: cover;             /* image ko pura cover karna */
+      background-repeat: no-repeat;       /* repeat na ho */
+      background-position: center;        /* beech mein ho */
+    }
+  footer {
+            background-color: rgba(146, 59, 59, 0.7);  /* white background for the footer */
+            color: rgb(244, 245, 245);            /* White text color */
+            text-align: center;      /* Centered text */
+            padding: 0.5px;           /* Padding around the text */
+            position: fixed;         /* Fixed position at the bottom */
+            width: 100%;             /* Full width */
+            bottom: 0;               /* Position it at the bottom */
+    }
+    .back-link {
+    color: white;
+    text-decoration: none; /* underline hatane ke liye, optional */
+  }
+
+  .back-link:hover {
+  text-decoration: underline; /* hover par underline chahiye to */
+  }
+  </style>
+
+  <header>
+    <h2>Select a Brand<br>Click now </h2>
+  </header>
+
+  <!-- Hidden radio buttons -->
+  <input type="radio" name="brand" id="khaadi">
+  <input type="radio" name="brand" id="saya">
+  <input type="radio" name="brand" id="gulahmed">
+  <input type="radio" name="brand" id="Bonanzasatrangi">
+
+  <div class="brand-select">
+    <label for="khaadi">Khaadi</label>
+    <label for="saya">Saya</label>
+    <label for="gulahmed">Gul Ahmed</label>
+    <label for="Bonanzasatrangi">Bonanza Satrangi</label>
+  </div>
+
+  <!-- Khaadi Products -->
+  <div class="images khaadi-images">
+    <div class="product-card">
+      </a><img src="d:\New folder\images (3).jpeg" alt="Khaadi Dress 1">
+      <h3>Elegant Brown Dress</h3>
+      <p>Perfect for evening parties.</p>
+      <p class="price">$75.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="d:\New folder\images.jpeg" alt="Khaadi Dress 2">
+      <h3>Floral blue Dress</h3>
+      <p>Light and comfy for summers.</p>
+      <p class="price">$50.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Saya Products -->
+  <div class="images saya-images">
+    <div class="product-card">
+      <img src="d:\New folder\7ae63f9a6702cdb818ec6a5c7b96e7c4.jpg" alt="Saya Dress 1">
+      <h3> Blue Dress</h3>
+      <p>Stylish and trendy for a night out.</p>
+      <p class="price">$80.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src=" d:\New folder\1139c0217636123.Y3JvcCwzNjE5LDI4MzAsMCw4NTE.jpg" alt="Saya Dress 2">
+      <h3>bluelish green Dress</h3>
+      <p>Perfect for casual brunch.</p>
+      <p class="price">$45.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Gul Ahmed Products -->
+  <div class="images gulahmed-images">
+    <div class="product-card">
+      <img src="d:\New folder\efb0a608e766ea48189d2f601ae36beb.jpg" alt="Gul Ahmed Dress 1">
+      <h3>Royal Red Dress</h3>
+      <p>Elegant look for special occasions.</p>
+      <p class="price">2990.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="d:\New folder\eet245100b_l-blue_2.jpg" alt="Gul Ahmed Dress 2">
+      <h3>Peach Comfort Dress</h3>
+      <p>Soft fabric for all-day wear.</p>
+      <p class="price">3360.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Bonanza Satrangi Products -->
+  <div class="images Bonanzasatrangi-images">
+    <div class="product-card">
+      <img src="d:\New folder\project\bonanza satrangi\images (1).jpeg" alt="project/bonanza satrangi/images (1).jpeg">
+      <h3>Royal  black brown Dress</h3>
+      <p>Elegant look for special occasions.</p>
+      <p class="price">2290.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+    <div class="product-card">
+      <img src="d:\New folder\project\bonanza satrangi\images (2).jpeg" alt="project/bonanza satrangi/images (2).jpeg">
+      <h3>Royal Redish brown Dress</h3>
+      <p>Soft fabric for all-day wear.</p>
+      <p class="price">3360.00</p>
+      <a href="#order" class="order-btn">Order Now</a>
+    </div>
+  </div>
+  <link rel="stylesheet" href="css/style.css">
+<!-- Order Form Modal -->
+<div id="order" class="order-form-container">
+  <div class="order-form">
+    <a href="#" class="close-btn">&times;</a>
+    <h3>Place Your Order</h3>
+   <form action="https://formsubmit.co/YOUR_EMAIL_HERE" method="POST">
+   <!-- Basic setup -->
+   <input type="hidden" name="_captcha" value="false">
+   <input type="hidden" name="_template" value="table">
+   
+   <!-- ✅ Confirmation email to client -->
+   <input type="hidden" name="_autoresponse" value="Thank you for your order! We’ve received your details and will contact you soon.">
+
+   <!-- Form fields -->
+   <label for="name">Name</label>
+   <input type="text" id="name" name="name" required>
+
+   <label for="email">Email</label>
+   <input type="email" id="email" name="email" required>
+
+   <label for="address">Address</label>
+   <textarea id="address" name="address" rows="3" required></textarea>
+
+   <label for="phone">Phone</label>
+   <input type="tel" id="phone" name="phone" required>
+
+   <button type="submit">Submit Order</button>
+   </form>
+  </div>
+</div>
+  <footer>
+    <a href="index.html" class="back-link">Back to Main Page</a>
+  </footer>
+</body>
+</html>
